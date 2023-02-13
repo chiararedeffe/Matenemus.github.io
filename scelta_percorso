@@ -17,29 +17,12 @@
       <div id="logo"> <img src="Immagini/logo_matenemus_bn.png" height="29%" width= "29%"> </a></div>
   </nav>
     
-  <main id="home">
+  <main id="scelta_percorso">
     <div>
-      <h1 id=home-text>
-      Ciao! Benvenuto in <br> <b>MATENEMUS</b></h1>
+      <h5 id=scelta_percorso-text>
+        Scegli il percorso più adatto a te</h5>
     </div>
-    <div>
-      <h3 id=home-text>
-        Prima di iniziare il percorso <br> inserisci qui il tuo nome utente</h3>
-    </div>
-
-      <form name="nickname" method="get" action="./telecameradue.html">
-
-    <input id='user' name='usern' type='text' placeholder='nome utente' style='display: block;'>
-
-      <button class="button-base" type="submit" onclick="setNome()">
-      <a><h2><b>AVANTI</b></h2></a>
-      </button>
-      </form>
-      
   </main>
+  
   </body>
-  <script src="./script.js"></script>
-  <script>
-    cambia();
-  </script>
 </html>
