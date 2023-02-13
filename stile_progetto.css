@@ -100,8 +100,8 @@ a:link {
 
 /*Navbar*/
 nav#main-nav {
-    width: 169px;
-    height: 393px;
+    width: 393px;
+    height: 169px;
     background-color: #74B7A9;
     display: flex;
     float: right;
@@ -116,11 +116,11 @@ nav#main-nav {
 }
 
 #logo {
-    width: 73.83px;
+    width: 115.61px;
 }
 
 #logo img {
-    min-width: 80px;
+    min-width: 115.61;
 }
 
 /*Pulsanti*/
