@@ -9,39 +9,18 @@
    License: none (public domain)
 */
 
-fieldset, form, label, legend, input {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-
- 
-:root {
-    --rounded: 50px;
-}
-
 body {
+    justify-content: center;
+    align-items: center;
     background-color: #F5F7FF;
-    background-size: 400% 400%;
-    height: 50vh;
+    height: 852px;
+    width: 393px;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #4C3151;
 }
 
 
-
-.full-height{
-    min-height: calc(100vh - 119px - 80px);
-}
-
-* {
-    box-sizing: border-box;
-}
 
 p::selection, span::selection, p a:link::selection {
     background-color: #F5F7FF;
@@ -50,13 +29,13 @@ p::selection, span::selection, p a:link::selection {
 
 
 /*Caratteri*/
-p, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
 /*TESTI PRINCIPALI*/
 p {
-    font-size: 20px;
+    font-size: 15px;
     color: #4C3151;
     text-align: center;
     justify-content: center;
@@ -64,43 +43,44 @@ p {
 }
 
 /*TESTI PRINCIPALI EVIDENZIATI*/
-h2 {
-    font-size: 20px;
-    color: #4C3151;
-    text-align: center;
-    justify-content: center;
-    font-weight: 500;
-}
-
-/*BOTTONI */
-h3 {
-    font-size: 20px;
-    color: #4C3151;
-    text-align: center;
-    justify-content: center;
-    font-weight: 500;
-}
-
-/*SCHERMATA INIZIALE */
-h4 {
-    font-size: 33px;
+h1 {
+    font-size: 25px;
     color: #4C3151;
     text-align: center;
     justify-content: center;
     font-weight: 400;
 }
 
-h5 {
-    font-size: 26px;
+/*BOTTONI e SEGNALAZIONI*/
+h2 {
+    font-size: 15px;
+    color: #F5F7FF;
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+/*SCHERMATA INIZIALE */
+h3 {
+    font-size: 20px;
     color: #4C3151;
     text-align: center;
     justify-content: center;
     font-weight: 300;
 }
 
+
 /*SCHERMATA PERCORSI */
-h6 {
-    font-size: 26px;
+h4 {
+    font-size: 12px;
+    color: #4C3151;
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 20px;
     color: #4C3151;
     text-align: center;
     justify-content: center;
@@ -117,28 +97,22 @@ a:link {
 
 /*Navbar*/
 nav#main-nav {
-    width: 393px;
+    width: 100%;
     height: 169px;
-    background-color: #74B7A9;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    float: center;
-    top: 0;
-    padding-top: 25px;
-    padding-left: 60px;
-    padding-right: 60px;
-    z-index: 5;
+    align-items: center;
     justify-content: space-between;
     align-content: center;
-    align-items: center;
+    background-color: #74B7A9;
+    text-align: center;
+
+   
 }
 
-#logo {
-    width: 100%;
-}
 
-#logo img {
-    min-width: 100%;
-}
+
 
 /*Pulsanti*/
 button {
@@ -146,13 +120,13 @@ button {
     text-decoration: none;
     text-align: center;
     color: #D5A2E3;
+    border-radius: 26px;
     background-color: #D5A2E3;
     border: 2px none;
     cursor: pointer;
     padding: 10px 10px 10px 10px;
     width: 128px;
     height: 52px;
-    box-shadow: 0px 0px 10px #98ff98;
     margin-left: 50px;
     margin-bottom: 10px;
 }
@@ -174,24 +148,18 @@ button {
 
 
 /*Immagini*/
-#color object, #color img {
-    align-items: center;
+img{
+    margin: 10px 10px 10px 10px;
 }
 
-#color object, #profile img {
-    align-items: center;
-    padding-top: 30%;
-}
-
-.img-telecamera {
-    align-items: center;
-    margin: 60px 20px 10px 20px;
+.logo{
+    margin: 10px 10px 10px 10px;
+   
 }
 
 
 /*Home*/
 main#home {
-    margin-top: 500px;
     padding: 50px 1%;
     max-width: 393px;
     max-height: 852;
@@ -201,20 +169,28 @@ main#home {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    display: flex;
     justify-content: space-between;
     align-content: center;
 }
 #home-text {
     text-align: center;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
-@media screen and (max-width: 1100px) {
-    main#home {flex-direction: column; justify-content: space-around;}
-    #home-text {width: 100%; text-align: center;}
+
+input[type=text] {
+    width: 312px;
+    height: 52px;
+    margin: 66px auto;
+    font-size: 15px;
+    color:#4C3151;
+    background-color: #D0F2EB;
+    text-align: center;
+    border: none;
+    font-style: italic;
 }
+
 
 
 
