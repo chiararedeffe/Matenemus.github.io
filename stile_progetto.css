@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS specifico del progetto */
+/*--fondochiaro: #F5F7FF;
+    --fondogiallo: #F8F0E9;
+    --fondorosa: #F1DBF8;
+    --fondolilla: #E0E7FC;
+    --fondoverde: #E2F0E9;
+    --fondoceleste: #DDF6FF;
+    --blu: #0025FF;
+    --arancione: #FF944D;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+fieldset, form, label, legend, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+ 
+:root {
+    --rounded: 50px;
+}
+
+body {
+    background-color: #F5F7FF;
+    background-size: 400% 400%;
+    height: 50vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #4C3151;
+}
+
+
+
+.full-height{
+    min-height: calc(100vh - 119px - 80px);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p::selection, span::selection, p a:link::selection {
+    background-color: #F5F7FF;
+    color: #4C3151;
+}
+
+
+/*Caratteri*/
+p, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+/*TESTI PRINCIPALI*/
+p {
+    font-size: 50px;
+    color: #0025FF;
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+/*TESTI PRINCIPALI EVIDENZIATI*/
+h2 {
+    font-size: 50px;
+    color: #0025FF;
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+/*BOTTONI / NOMI CHI SIAMO / ASSECONDA / CONTRASTA*/
+h3 {
+    font-size: 25px;
+    color: #0025FF;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+
+/*Links*/
+a:link {
+    text-decoration: none;
+    color: #0025FF;
+    padding-bottom: 20px;
+}
+
+/*Navbar*/
+nav#main-nav {
+    width: 169px;
+    height: 393px;
+    background-color: #74B7A9;
+    display: flex;
+    float: right;
+    top: 0;
+    padding-top: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
+    z-index: 5;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 73.83px;
+}
+
+#logo img {
+    min-width: 80px;
+}
+
+/*Pulsanti*/
+button {
+    border-radius: 50%;
+    font-family: 'Space Grotesk', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: transparent;
+    background-color: transparent;
+    border: 2px none;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    width: 180px;
+    height: 51px;
+    box-shadow: 0px 0px 10px #98ff98;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.button-nav {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.button-test {
+    width: 280px;
+    height: 77px;
+    background-color: #98ff98;
+    margin: 70px 70px 70px 70px;
+}
+
+.button-nav:hover {
+    background-color: #98ff98;
+}
+
+a { 
+text-decoration: none;
+}
+
+/*Immagini*/
+#color object, #color img {
+    align-items: center;
+}
+
+#color object, #profile img {
+    align-items: center;
+    padding-top: 30%;
+}
+
+.img-telecamera {
+    align-items: center;
+    margin: 60px 20px 10px 20px;
+}
+
+
+/*Home*/
+main#home {
+    margin-top: 370px;
+    padding: 50px 1%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+#home-text {
+    text-align: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 1100px) {
+    main#home {flex-direction: column; justify-content: space-around;}
+    #home-text {width: 100%; text-align: center;}
+}
+
+
+
+
+
+
+
+/*Pagina Splash*/
+main#splash {
+    margin-top: 119px;
+    padding: 70px 10%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
