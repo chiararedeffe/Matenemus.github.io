@@ -1,16 +1,7 @@
 @charset "utf-8";
 /* CSS specifico del progetto */
-/*--fondochiaro: #F5F7FF;
-    --fondogiallo: #F8F0E9;
-    --fondorosa: #F1DBF8;
-    --fondolilla: #E0E7FC;
-    --fondoverde: #E2F0E9;
-    --fondoceleste: #DDF6FF;
-    --blu: #0025FF;
-    --arancione: #FF944D;*/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -59,14 +50,14 @@ p::selection, span::selection, p a:link::selection {
 
 
 /*Caratteri*/
-p, h2, h3, h4, h5 {
+p, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
 /*TESTI PRINCIPALI*/
 p {
-    font-size: 50px;
-    color: #0025FF;
+    font-size: 20px;
+    color: #4C3151;
     text-align: center;
     justify-content: center;
     font-weight: 300;
@@ -74,17 +65,43 @@ p {
 
 /*TESTI PRINCIPALI EVIDENZIATI*/
 h2 {
-    font-size: 50px;
-    color: #0025FF;
+    font-size: 20px;
+    color: #4C3151;
     text-align: center;
     justify-content: center;
     font-weight: 500;
 }
 
-/*BOTTONI / NOMI CHI SIAMO / ASSECONDA / CONTRASTA*/
+/*BOTTONI */
 h3 {
-    font-size: 25px;
-    color: #0025FF;
+    font-size: 20px;
+    color: #4C3151;
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+/*SCHERMATA INIZIALE */
+h4 {
+    font-size: 33px;
+    color: #4C3151;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 26px;
+    color: #4C3151;
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+/*SCHERMATA PERCORSI */
+h6 {
+    font-size: 26px;
+    color: #4C3151;
     text-align: center;
     justify-content: center;
     font-weight: 400;
@@ -94,7 +111,7 @@ h3 {
 /*Links*/
 a:link {
     text-decoration: none;
-    color: #0025FF;
+    color: #4C3151;
     padding-bottom: 20px;
 }
 
@@ -104,7 +121,7 @@ nav#main-nav {
     height: 169px;
     background-color: #74B7A9;
     display: flex;
-    float: right;
+    float: center;
     top: 0;
     padding-top: 25px;
     padding-left: 60px;
@@ -116,50 +133,45 @@ nav#main-nav {
 }
 
 #logo {
-    width: 115.61px;
+    width: 100%;
 }
 
 #logo img {
-    min-width: 115.61;
+    min-width: 100%;
 }
 
 /*Pulsanti*/
 button {
-    border-radius: 50%;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     text-align: center;
-    color: transparent;
-    background-color: transparent;
+    color: #D5A2E3;
+    background-color: #D5A2E3;
     border: 2px none;
     cursor: pointer;
     padding: 10px 10px 10px 10px;
-    width: 180px;
-    height: 51px;
+    width: 128px;
+    height: 52px;
     box-shadow: 0px 0px 10px #98ff98;
     margin-left: 50px;
     margin-bottom: 10px;
 }
 
-.button-nav {
-    font-size: 25px;
-    font-weight: 500;
-}
-
-.button-test {
-    width: 280px;
-    height: 77px;
-    background-color: #98ff98;
+.button-base {
+    width: 128px;
+    height: 52px;
+    background-color: #D5A2E3;
     margin: 70px 70px 70px 70px;
 }
 
-.button-nav:hover {
-    background-color: #98ff98;
+.button-base_grande {
+    width: 190px;
+    height: 52px;
+    background-color: #D5A2E3;
+    margin: 70px 70px 70px 70px;
 }
 
-a { 
-text-decoration: none;
-}
+
 
 /*Immagini*/
 #color object, #color img {
@@ -179,9 +191,10 @@ text-decoration: none;
 
 /*Home*/
 main#home {
-    margin-top: 370px;
+    margin-top: 500px;
     padding: 50px 1%;
-    max-width: 1920px;
+    max-width: 393px;
+    max-height: 852;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -213,7 +226,7 @@ main#home {
 main#splash {
     margin-top: 119px;
     padding: 70px 10%;
-    max-width: 1920px;
+    max-width: 393px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
