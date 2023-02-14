@@ -145,16 +145,25 @@ button {
     margin: 70px 70px 70px 70px;
 }
 
+.button-percorso {
+    width: 312px;
+    height: 98px;
+    background-color: #D0F2EB;
+    border-radius: 0px;
+    margin: 10px 10px 10px 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align:justify;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+}
+
 
 
 /*Immagini*/
 img{
     margin: 10px 10px 10px 10px;
-}
-
-.logo{
-    margin: 10px 10px 10px 10px;
-   
 }
 
 
@@ -209,6 +218,11 @@ main#scelta_percorso {
     text-align: center;
     width: 100%;
     margin-top: 50px;
+}
+
+#percorso-text {
+    text-align: right;
+    width: 207px;
 }
 
 /*Pagina Splash*/
