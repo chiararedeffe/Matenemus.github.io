@@ -107,8 +107,6 @@ nav#main-nav {
     align-content: center;
     background-color: #74B7A9;
     text-align: center;
-
-   
 }
 
 
@@ -138,11 +136,18 @@ button {
     margin: 70px 70px 70px 70px;
 }
 
+.button-mappa {
+    width: 128px;
+    height: 52px;
+    background-color: #D5A2E3;
+    margin: 20px 20px 20px 20px;
+}
+
 .button-base_grande {
     width: 190px;
     height: 52px;
     background-color: #D5A2E3;
-    margin: 70px 70px 70px 70px;
+    margin: -5px 70px 70px 70px;
 }
 
 .button-percorso {
@@ -187,7 +192,6 @@ main#home {
     margin-top: 50px;
 }
 
-
 input[type=text] {
     width: 312px;
     height: 52px;
@@ -200,9 +204,10 @@ input[type=text] {
     font-style: italic;
 }
 
+
 /*Scelta percorso*/
 main#scelta_percorso {
-    padding: 50px 1%;
+    padding: 30px 1%;
     max-width: 393px;
     max-height: 852;
     margin-left: auto;
@@ -227,6 +232,31 @@ main#scelta_percorso {
     width: 207px;
 }
 
+/*Percorso faggi*/
+main#percorso_faggi {
+    padding: 30px 1%;
+    max-width: 393px;
+    max-height: 852;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#bottoni_percorso {
+    max-width: 393px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
 /*Pagina Splash*/
 main#splash {
     margin-top: 119px;
@@ -238,3 +268,38 @@ main#splash {
     align-items: center;
     flex-direction: column;
 }
+
+/*Tronco cavo*/
+main#tronco_cavo {
+    padding: 20px 1%;
+    max-width: 393px;
+    max-height: 852;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#titolo_faggio-text {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#tronco-text {
+    text-align: justify;
+    max-width: 312px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #D0F2EB;
+    padding: 5%;
+}
+
+#schedaimg {
+    margin: 25px 10px 0px 10px;
+}
+
