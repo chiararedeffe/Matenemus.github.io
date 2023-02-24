@@ -226,7 +226,6 @@ input[type=text] {
 
 /*Scelta percorso*/
 main#scelta_percorso {
-    padding: 30px 1%;
     max-width: 393px;
     max-height: 852;
     margin-left: auto;
@@ -242,14 +241,11 @@ main#scelta_percorso {
 #scelta_percorso-text {
     text-align: center;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
-#percorso-text {
-    text-align: right;
-    width: 207px;
-}
+
 
 /*Percorso faggi*/
 main#percorso_faggi {
@@ -453,3 +449,43 @@ main#termini_e_condizioni {
     margin: 1px 1px 1px 1px;
 }
 
+
+/*Impostazioni*/
+#impostazioniimg {
+    align-self: flex-end;
+}
+
+nav#main-menu {
+    width: 100%;
+    height: 79px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+nav ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    height: 58px;
+    width: 287px;
+    background-color: #D5A2E3;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+nav li {
+    position: relative;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav li:hover ul{
+    display: block;
+}
