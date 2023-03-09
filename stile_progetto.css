@@ -17,14 +17,14 @@ body {
     width: 393px;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    color: #4C3151;
+    color: #033300;
 }
 
 
 
 p::selection, span::selection, p a:link::selection {
     background-color: #F5F7FF;
-    color: #4C3151;
+    color:#033300;
 }
 
 
@@ -100,7 +100,7 @@ h5 {
 /*Links*/
 a:link {
     text-decoration: none;
-    color: #4C3151;
+    color: #033300;
     padding-bottom: 20px;
 }
 
@@ -121,9 +121,9 @@ button {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     text-align: center;
-    color: #D5A2E3;
+    color: #033300;
     border-radius: 26px;
-    background-color: #D5A2E3;
+    background-color: #E0ECB4;
     border: 2px none;
     cursor: pointer;
     padding: 10px 10px 10px 10px;
@@ -182,6 +182,19 @@ button {
 /*Immagini*/
 img{
     margin: 0px 0px 0px 0px;
+}
+
+
+/*Pagina Splash*/
+main#splash {
+    margin-top: 119px;
+    padding: 70px 10%;
+    max-width: 393px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -367,17 +380,27 @@ main#percorso_faggi {
     text-align: center;
 }
 
-/*Pagina Splash*/
-main#splash {
-    margin-top: 119px;
-    padding: 70px 10%;
+/*Prima tappa*/
+main#prima_tappa {
+    padding: 30px 1%;
     max-width: 393px;
+    max-height: 852;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-content: center;
 }
+
+#tappa-text {
+    max-width: 312px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
 
 /*Tronco cavo*/
 main#tronco_cavo {
