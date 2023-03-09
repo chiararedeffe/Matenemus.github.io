@@ -53,11 +53,11 @@ h2 {
 
 /*SCHERMATA INIZIALE */
 h3 {
-    font-size: 20px;
-    color: #033300;
+    font-size: 25px;
+    color: #A09BC6;
     text-align: center;
     justify-content: center;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /*SCHERMATA PRIVACY-TERMINI E CONDIZIONI */
@@ -66,7 +66,7 @@ h1 {
     color: #033300;
     text-align: center;
     justify-content: center;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 h4 {
@@ -181,12 +181,66 @@ button {
 
 /*Immagini*/
 img{
-    margin: 0px 00px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 
 /*Home*/
 main#home {
+    max-width: 393px;
+    max-height: 852;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    min-width: 400px; 
+}
+
+.container img {
+    width: 393px;
+    height: 852px;
+}
+
+.container .button-base_grande {
+    position: absolute;
+    top: 220px;
+    left: 130px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 12px 24px;
+    border-radius: 26px;
+    width: 190px;
+    height: 52px;
+    background-color: #E0ECB4;
+    margin: -5px 70px -5px 70px;
+}
+
+.container .button-base_grande_due {
+    position: absolute;
+    top: 650px;
+    left: 130px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 12px 24px;
+    border-radius: 26px;
+    width: 190px;
+    height: 52px;
+    background-color: #CECAEA;
+    margin: -5px 70px -5px 70px;
+}
+
+
+/*Registrazione utente*/
+main#utente {
     padding: 50px 1%;
     max-width: 393px;
     max-height: 852;
@@ -199,7 +253,7 @@ main#home {
     justify-content: space-between;
     align-content: center;
 }
-#home-text {
+#utente-text {
     text-align: center;
     width: 100%;
     margin-top: 50px;

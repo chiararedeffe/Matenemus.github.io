@@ -12,37 +12,19 @@
     <title> Matenemus </title>
   </head>
    
-	 <body>
-    <nav id="main-nav">
-      <div> 
-        <a href="./index.html"> <img src="Immagini/box_lago.png" height="169px" width= "393px"> 
-        </a></div>
-    </nav>
-    
-  <main id="home">
-    <div>
-      <h1 id=home-text>
-      Ciao! Benvenuto in <br> <b>MATENEMUS</b></h1>
-    </div>
-    
-    <div>
-      <h3 id=home-text>
-        Prima di iniziare il percorso <br> inserisci qui il tuo nome utente</h3>
-    </div>
+	<body>
+    <main id="home">
+        <div class="container">
+            <img src="Immagini/background_home.png" height="852px" width="auto">
+             <form method="get" action="PERCORSI">
+                <button class="button-base_grande"><h2><b>VAI AI PERCORSI</b></h2>
+                </button>
+                <button class="button-base_grande_due"><h2><b>SCATTA UN SELFIE</b></h2>
+                </button>
+            </form>
+        </div>
+   
 
-      <form name="nickname" method="get" action="./scelta_percorso.html">
-
-    <input id='user' name='usern' type='text' placeholder='nome utente' style='display: block;'>
-
-      <button class="button-base" type="submit" onclick="setNome()">
-      <a><h2><b>AVANTI</b></h2></a>
-      </button>
-      </form>
-      
   </main>
   </body>
-  <script src="./script.js"></script>
-  <script>
-    cambia();
-  </script>
 </html>
