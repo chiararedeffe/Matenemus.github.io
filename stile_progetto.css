@@ -178,6 +178,30 @@ button {
 
 }
 
+button {
+    height:48px;
+    width: 287px;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 10px 0px 40px;
+    border-radius: 26px;
+}
+
+.button-menu {
+    margin-top: 35px;
+}
+
+.button-menudue {
+    height:85px;
+    width: 287px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5%;
+    padding-left: 0%;
+}
+
 
 /*Immagini*/
 img{
@@ -357,7 +381,6 @@ td {
 
 /*Percorso faggi*/
 main#percorso_faggi {
-    padding: 30px 1%;
     max-width: 393px;
     max-height: 852;
     margin-left: auto;
@@ -379,6 +402,11 @@ main#percorso_faggi {
     align-content: center;
     text-align: center;
 }
+
+#mappaimg {
+    margin-top: 15px;
+}
+
 
 /*Prima tappa*/
 main#prima_tappa {
@@ -464,7 +492,7 @@ main#segnalazione {
 }
 
 input[type=text-segnalazione] {
-    width: 255px;
+    width: 312px;
     height: 35px;
     margin: 5px auto 60px;
     font-size: 15px;
@@ -473,6 +501,32 @@ input[type=text-segnalazione] {
     text-align: center;
     border: none;
     font-style: italic;
+}
+
+
+/*Fine percorso*/
+main#fine {
+    padding: 20px 1%;
+    max-width: 393px;
+    max-height: 852;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#fine-text {
+    max-width: 312px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#fineimg {
+    margin: 0px 0px 20px 0px;
 }
 
 
@@ -569,41 +623,30 @@ main#termini_e_condizioni {
 
 
 /*Impostazioni*/
-#impostazioniimg {
-    align-self: flex-end;
+#menuiimg {
+    align-items: flex-end;
 }
 
 nav#main-menu {
     width: 100%;
-    height: 79px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 109px;
     display: flex;
-    align-self: flex-end;
+    align-items: flex-end;
     justify-content: center;
+    bottom:0;
+    position: absolute;
 }
+
 
 nav ul {
-    display: none;
     position: absolute;
     list-style: none;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    height: 58px;
-    width: 287px;
-    background-color: #D5A2E3;
+    height: 419px;
+    width: 365px;
+    background-color: #CECAEA;
     top: 100%;
-    left: 0;
-    width: 100%;
-}
-
-nav li {
-    position: relative;
-    float: left;
-    width: 20%;
-    text-align: center;
-}
-
-nav li:hover ul{
-    display: block;
+    align-items: center;
+    justify-content: center;
 }

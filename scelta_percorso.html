@@ -7,7 +7,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
     <link href="stile_progetto.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="menu.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <title> Matenemus </title>
   </head>
@@ -46,21 +47,19 @@
     <div>
       <img src="Immagini/box_percorso5.png" height="98px" width="312px">
     </div>
-
   </main>
+
+  <nav id="main-menu">
+    <img id="menuimg" src="./Immagini/pulsante_impostazioni.png" width="98px" height="auto" onclick="cambia()">
+    <ul>
+      <li>
+        <button class="button-menu"><a href="./scatta_selfie.html"><h1><b>Scatta un selfie</b></h1></a></button>
+        <button><a href="https://www.facebook.com/mucirama.it"><h1><b>Visita il museo</b></h1></a></button>
+        <button><a href="./termini_e_condizioni.html"><h1><b>Termini e condizioni</b></h1></a></button>
+        <button><a href="./privacy.html"><h1><b>Privacy</b></h1></a></button>
+        <button class="button-menudue"><a href="https://www.facebook.com/MateseNostrum"><img src="Immagini/matese_nostrum.png" height="85px" width="auto"></a></button>
+      </li>
+    </ul>
+  </nav>
 </body>
-
-    <header>
-      <nav id="main-menu">
-          <img id="impostazioniimg" src="Immagini/pulsante_impostazioni.png" height="49px" width="98px">
-           <ul>
-              <li><a href="./">Cambia nome utente</a></li>
-              <li><a href="https://www.facebook.com/mucirama.it">Visita il museo</a></li>
-              <li><a href="./termini_e_condizioni.html">Termini e condizioni</a></li>
-              <li><a href="./privacy.html">Privacy</a></li>
-              <li><a href="https://www.facebook.com/MateseNostrum">In collaborazione con</a></li>
-           </ul>
-      </nav>
-    </header>
-
 </html>
