@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <title> Matenemus </title>
+    <style>
+      body {
+        background-image: url('Immagini/background_scatta_selfie.png');
+        background-size: 393px 852px;
+        background-repeat: no-repeat;
+      }
+    </style>
   </head>
    
 	 <body>
@@ -19,11 +26,11 @@
     </div>
 
     <div>
-        <h5 id=titolo_selfie-text><b>SCATTA UN SELFIE</b></h5>
+        <h3 id=titolo_selfie-text><b>SCATTA UN SELFIE</b></h3>
     </div>
 
     <div>
-      <p id=selfie-text>
+      <h5 id=selfie-text>
         <b>PER SAPERNE DI PIÚ</b>
         <br>
         <br>
@@ -32,6 +39,7 @@
         <br>
         <b>Sii protagonista del tuo viaggio e <br>
         delle tue esperienze!</b>
+      </h5>
     </div>
 
     <div>
@@ -43,5 +51,17 @@
     </div>
       
   </main>
+  <nav id="main-menu">
+    <img id="menuimg" src="./Immagini/pulsante_impostazioni.png" width="98px" height="auto" onclick="cambia()">
+    <ul>
+      <li>
+        <button class="button-menu"><a href="./scatta_selfie.html"><h1><b>Scatta un selfie</b></h1></a></button>
+        <button><a href="https://www.facebook.com/mucirama.it"><h1><b>Visita il museo</b></h1></a></button>
+        <button><a href="./termini_e_condizioni.html"><h1><b>Termini e condizioni</b></h1></a></button>
+        <button><a href="./privacy.html"><h1><b>Privacy</b></h1></a></button>
+        <button class="button-menudue"><a href="https://www.facebook.com/MateseNostrum"><img src="Immagini/matese_nostrum.png" height="85px" width="auto"></a></button>
+      </li>
+    </ul>
+  </nav>
   </body>
 </html>
