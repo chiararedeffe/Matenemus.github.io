@@ -168,7 +168,7 @@ button {
 .button_vai {
     width: 48px;
     height: 48px;
-    background-color: #E0ECB4;
+    background-color: #CECAEA;
     border-radius: 50px;
     margin: 0px 24px 0px 24px;
     font-family: 'Roboto', sans-serif;
@@ -381,7 +381,7 @@ input[type=text] {
 /*Scelta percorso*/
 main#scelta_percorso {
     max-width: 393px;
-    max-height: 852;
+    max-height: 852px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -390,6 +390,7 @@ main#scelta_percorso {
     text-align: center;
     justify-content: space-between;
     align-content: center;
+    overflow: hidden;
 }
 
 #scelta_percorso-text {
@@ -399,21 +400,101 @@ main#scelta_percorso {
     margin-bottom: 20px;
 }
 
-table {
-    background-color: #00271Bc0;
-    border-collapse: collapse;
+input[type=radio] {
+    display: none;
 }
 
-th {
-    align-items: center;
-    text-align: center;
+label.lab {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #E0ECB4;
+    border-radius: 50%;
+    margin: 4px;
 }
 
-td {
-    text-align: justify;
+label.lab:hover {
+    background-color: #E0ECB4;
+}
+
+label.lab-sel {
+    background-color: #E0ECB4;
+    box-shadow: 0 0 2px #E0ECB4;
+}
+
+section#paginazione {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section#pagine {
+    width: 500vw;
+    height: 100vh;
+    display: flex;
+}
+
+section#pagine > div {
+    flex: 0 0 20%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .8s ease-in-out;
 }
+
+
+#page1 {
+    background-image: url('Immagini/background_faggi.png');
+    background-size: 393px 852px;
+    background-repeat: no-repeat;
+}
+
+#page2 {
+    background-image: url('Immagini/background_querce.png');
+    background-size: 393px 852px;
+    background-repeat: no-repeat;
+}
+
+#page3 {
+    background-image: url('Immagini/background_pini.png');
+    background-size: 393px 852px;
+    background-repeat: no-repeat;
+}
+
+#page4 {
+    background-image: url('Immagini/background_castagni.png');
+    background-size: 393px 852px;
+    background-repeat: no-repeat;
+}
+
+#page5 {
+    background-image: url('Immagini/background_flora_lago.png');
+    background-size: 393px 852px;
+    background-repeat: no-repeat;
+}
+
+input#inp1:checked ~ div#page1 {
+    margin-left: 0;
+}
+
+input#inp2:checked ~ div#page1 {
+    margin-left: -20%;
+}
+
+input#inp3:checked ~ div#page1 {
+    margin-left: -40%;
+}
+
+input#inp4:checked ~ div#page1 {
+    margin-left: -60%;
+}
+
+input#inp5:checked ~ div#page1 {
+    margin-left: -80%;
+}
+
+
 
 /*Percorso faggi*/
 main#percorso_faggi {

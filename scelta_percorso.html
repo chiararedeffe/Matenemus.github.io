@@ -11,44 +11,55 @@
     <script src="menu.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <title> Matenemus </title>
-    <style>
-      body {
-        background-image: url('Immagini/background_faggi.png');
-        background-size: 393px 852px;
-        background-repeat: no-repeat;
-      }
-    </style>
+   
   </head>
    
-	<body>  
-  <main id="scelta_percorso">
-    <div>
-      <table style="width:312px; height: 98px">
-        <tr>
-            <th>2h</th>
-            <th colspan="2"><h1></h1>Scoprire i <br>FAGGI</h1></th>
-            <th colspan="2">vai</th>
-          </tr>
-          <tr>
-            <td>difficoltà</td>
-          </tr>
-      </table>
-      
-  </main>
+	<body> 
+    <section id="pagine">
+      <input type="radio" name="inp" id="inp1" checked>
+      <input type="radio" name="inp" id="inp2">
+      <input type="radio" name="inp" id="inp3">
+      <input type="radio" name="inp" id="inp4">
+      <input type="radio" name="inp" id="inp5">
 
-  <nav id="main-menu">
-    <div>
-    <img id="menuimg" src="./Immagini/pulsante_impostazioni.png" width="98px" height="auto" onclick="cambia()">
-    <ul>
-      <li>
-        <button class="button-menu"><a href="./scatta_selfie.html"><h1><b>Scatta un selfie</b></h1></a></button>
-        <button><a href="https://www.facebook.com/mucirama.it"><h1><b>Visita il museo</b></h1></a></button>
-        <button><a href="./termini_e_condizioni.html"><h1><b>Termini e condizioni</b></h1></a></button>
-        <button><a href="./privacy.html"><h1><b>Privacy</b></h1></a></button>
-        <button class="button-menudue"><a href="https://www.facebook.com/MateseNostrum"><img src="Immagini/matese_nostrum.png" height="85px" width="auto"></a></button>
-      </li>
-    </ul>
-  </div>
-  </nav>
+      <div id="page1" class="page1">
+      </div>
+
+      <div id="page2">
+      </div>
+
+      <div id="page3">
+      </div>
+
+      <div id="page4">
+      </div>
+
+      <div id="page5">
+      </div>
+    </section>
+
+    <section id="paginazione">
+      <label for="inp1" data-page ="1" class="lab lab-sel"></label>
+      <label for="inp2" data-page ="2" class="lab"></label>
+      <label for="inp3" data-page ="3" class="lab"></label>
+      <label for="inp4" data-page ="4" class="lab"></label>
+      <label for="inp5" data-page ="5" class="lab"></label>
+    </section>
+    <script src="slider.js"></script>
+
+    <nav id="main-menu">
+      <div>
+      <img id="menuimg" src="./Immagini/pulsante_impostazioni.png" width="98px" height="auto" onclick="cambia()">
+      <ul>
+        <li>
+          <button class="button-menu"><a href="./scatta_selfie.html"><h1><b>Scatta un selfie</b></h1></a></button>
+          <button><a href="https://www.facebook.com/mucirama.it"><h1><b>Visita il museo</b></h1></a></button>
+          <button><a href="./termini_e_condizioni.html"><h1><b>Termini e condizioni</b></h1></a></button>
+          <button><a href="./privacy.html"><h1><b>Privacy</b></h1></a></button>
+          <button class="button-menudue"><a href="https://www.facebook.com/MateseNostrum"><img src="Immagini/matese_nostrum.png" height="85px" width="auto"></a></button>
+        </li>
+      </ul>
+      </div>
+    </nav>
 </body>
 </html>
