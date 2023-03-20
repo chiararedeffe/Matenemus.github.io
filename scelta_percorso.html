@@ -11,7 +11,15 @@
     <script src="menu.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <title> Matenemus </title>
-   
+    <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      overflow: hidden;
+    }
+    </style>
   </head>
    
 	<body> 
@@ -23,18 +31,53 @@
       <input type="radio" name="inp" id="inp5">
 
       <div id="page1" class="page1">
+        <div id="button_vai">
+          <button class="button-vai">
+              <a href="./percorso_faggi.html">
+                  <h2><b>VAI</b></h2>
+              </a>
+          </button>
+        </div>
       </div>
 
       <div id="page2">
+        <div id="button_vai">
+          <button class="button-vai">
+              <a href="./">
+                  <h2><b>VAI</b></h2>
+              </a>
+          </button>
+        </div>
       </div>
 
       <div id="page3">
+        <div id="button_vai">
+          <button class="button-vai">
+              <a href="./">
+                  <h2><b>VAI</b></h2>
+              </a>
+          </button>
+        </div>
       </div>
 
       <div id="page4">
+        <div id="button_vai">
+          <button class="button-vai">
+              <a href="./">
+                  <h2><b>VAI</b></h2>
+              </a>
+          </button>
+        </div>
       </div>
 
       <div id="page5">
+        <div id="button_vai">
+          <button class="button-vai">
+              <a href="./">
+                  <h2><b>VAI</b></h2>
+              </a>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -47,19 +90,17 @@
     </section>
     <script src="slider.js"></script>
 
-    <nav id="main-menu">
-      <div>
+    <div id="main-menu">
       <img id="menuimg" src="./Immagini/pulsante_impostazioni.png" width="98px" height="auto" onclick="cambia()">
-      <ul>
-        <li>
-          <button class="button-menu"><a href="./scatta_selfie.html"><h1><b>Scatta un selfie</b></h1></a></button>
-          <button><a href="https://www.facebook.com/mucirama.it"><h1><b>Visita il museo</b></h1></a></button>
-          <button><a href="./termini_e_condizioni.html"><h1><b>Termini e condizioni</b></h1></a></button>
-          <button><a href="./privacy.html"><h1><b>Privacy</b></h1></a></button>
-          <button class="button-menudue"><a href="https://www.facebook.com/MateseNostrum"><img src="Immagini/matese_nostrum.png" height="85px" width="auto"></a></button>
-        </li>
-      </ul>
+        <ul id="menu2">
+          <li>
+            <button class="button-menu"><a href="./scatta_selfie.html"><p><b>Scatta un selfie</b></p></a></button>
+            <button><a href="https://www.facebook.com/mucirama.it"><p><b>Visita il museo</b></p></a></button>
+            <button><a href="./termini_e_condizioni.html"><p><b>Termini e condizioni</b></p></a></button>
+            <button><a href="./privacy.html"><p><b>Privacy</b></p></a></button>
+            <button class="button-menudue"><a href="https://www.facebook.com/MateseNostrum"><img src="Immagini/matese_nostrum.png" height="85px" width="auto"></a></button>
+          </li>
+        </ul>
       </div>
-    </nav>
 </body>
 </html>

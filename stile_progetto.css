@@ -12,8 +12,8 @@
 body {
     justify-content: center;
     align-items: center;
-    height: 852px;
-    width: 393px;
+    width: 100%;
+    height: auto;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -27,7 +27,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /*TESTI PRINCIPALI*/
 p {
-    font-size: 15px;
+    font-size: 20px;
     color: #033300;
     text-align: center;
     justify-content: center;
@@ -165,15 +165,22 @@ button {
 
 }
 
-.button_vai {
+.button-vai {
     width: 48px;
     height: 48px;
     background-color: #CECAEA;
     border-radius: 50px;
     margin: 0px 24px 0px 24px;
     font-family: 'Roboto', sans-serif;
-    justify-content: center;
 }
+
+div#button_vai{
+    width: 393px;
+    height: 48px;
+    margin-top: -228px;
+    margin-right: -580px;
+}
+
 
 
 button {
@@ -209,14 +216,15 @@ img{
 
 /*Pagina Splash*/
 main#splash {
-    width: 393px;
-    height: 852px;
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     position: absolute;
+    overflow: hidden;
 }
 
 
@@ -306,17 +314,15 @@ main#selfie {
 
 /*Registrazione utente*/
 main#utente {
-    padding: 50px 1%;
-    max-width: 393px;
-    max-height: 852;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
-    align-content: center;
 }
 
 #utente-titolo {
@@ -379,20 +385,6 @@ input[type=text] {
 
 
 /*Scelta percorso*/
-main#scelta_percorso {
-    max-width: 393px;
-    max-height: 852px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    align-content: center;
-    overflow: hidden;
-}
-
 #scelta_percorso-text {
     text-align: center;
     width: 100%;
@@ -498,25 +490,20 @@ input#inp5:checked ~ div#page1 {
 
 /*Percorso faggi*/
 main#percorso_faggi {
-    max-width: 393px;
-    max-height: 852;
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    margin-top: 50px;
     align-items: center;
     flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    align-content: center;
 }
 
 #bottoni_percorso {
     max-width: 393px;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
-    justify-content: space-between;
-    align-content: center;
     text-align: center;
 }
 
@@ -744,7 +731,7 @@ main#termini_e_condizioni {
     align-items: flex-end;
 }
 
-nav#main-menu {
+div#main-menu {
     width: 100%;
     height: 109px;
     display: flex;
@@ -755,15 +742,17 @@ nav#main-menu {
 }
 
 
-nav ul {
-    position: absolute;
+div ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     height: 419px;
-    width: 365px;
+    width: 100%;
     background-color: #CECAEA;
-    top: 100%;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 100%
+}
+
+#cameraFileInput {
+    display: none;
 }
