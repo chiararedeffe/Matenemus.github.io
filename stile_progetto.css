@@ -12,20 +12,12 @@
 body {
     justify-content: center;
     align-items: center;
-    background-color: #F5F7FF;
-    height: 852px;
-    width: 393px;
+    width: 100%;
+    height: auto;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    color: #033300;
 }
 
-
-
-p::selection, span::selection, p a:link::selection {
-    background-color: #F5F7FF;
-    color:#033300;
-}
 
 
 /*Caratteri*/
@@ -35,11 +27,36 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /*TESTI PRINCIPALI*/
 p {
-    font-size: 15px;
-    color: #FFFFFF;
+    font-size: 20px;
+    color: #033300;
     text-align: center;
     justify-content: center;
     font-weight: 300;
+}
+
+h4 {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+/*TITOLI*/
+h1 {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
 }
 
 /*BOTTONI*/
@@ -51,7 +68,7 @@ h2 {
     font-weight: 300;
 }
 
-/*SCHERMATA INIZIALE */
+/*TITOLI LILLA*/
 h3 {
     font-size: 25px;
     color: #A09BC6;
@@ -60,23 +77,7 @@ h3 {
     font-weight: 400;
 }
 
-/*SCHERMATA PRIVACY-TERMINI E CONDIZIONI */
-h1 {
-    font-size: 20px;
-    color: #033300;
-    text-align: center;
-    justify-content: center;
-    font-weight: 300;
-}
-
-h4 {
-    font-size: 15px;
-    color: #A09BC6;
-    text-align: center;
-    justify-content: center;
-    font-weight: 500;
-}
-
+/*PRIVACY*/
 h6 {
     font-size: 10px;
     color: #033300;
@@ -84,18 +85,6 @@ h6 {
     justify-content: center;
     font-weight: 300;
 }
-
-/*SCHERMATA SEGNALAZIONI */
-h5 {
-    font-size: 20px;
-    color: #A09BC6;
-    text-align: center;
-    justify-content: center;
-    font-weight: 400;
-}
-
-
-
 
 /*Links*/
 a:link {
@@ -112,8 +101,6 @@ nav#main-nav {
     align-content: center;
     text-align: center;
 }
-
-
 
 
 /*Pulsanti*/
@@ -178,6 +165,24 @@ button {
 
 }
 
+.button-vai {
+    width: 48px;
+    height: 48px;
+    background-color: #CECAEA;
+    border-radius: 50px;
+    margin: 0px 24px 0px 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div#button_vai{
+    width: 393px;
+    height: 48px;
+    margin-top: -228px;
+    margin-right: -580px;
+}
+
+
+
 button {
     height:48px;
     width: 287px;
@@ -211,14 +216,15 @@ img{
 
 /*Pagina Splash*/
 main#splash {
-    width: 393px;
-    height: 852;
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     position: absolute;
+    overflow: hidden;
 }
 
 
@@ -280,7 +286,7 @@ main#home {
 main#selfie {
     padding: 20px 1%;
     max-width: 393px;
-    max-height: 852;
+    max-height: 852px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -292,15 +298,13 @@ main#selfie {
 #titolo_selfie-text {
     text-align: center;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #selfie-text {
     max-width: 312px;
-    margin-top: 15px;
+    margin-top: 40px;
     margin-bottom: 1px;
-    background-color: #033300;
-    padding: 5%;
 }
 
 #scattaimg {
@@ -310,18 +314,23 @@ main#selfie {
 
 /*Registrazione utente*/
 main#utente {
-    padding: 50px 1%;
-    max-width: 393px;
-    max-height: 852;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
-    align-content: center;
 }
+
+#utente-titolo {
+    text-align: center;
+    width: 100%;
+    margin-top: 190px;
+}
+
 #utente-text {
     text-align: center;
     width: 100%;
@@ -333,28 +342,49 @@ input[type=text] {
     height: 52px;
     margin-top: 20px;
     font-size: 15px;
-    color:#FFFFFF;
-    background-color: #033300;
+    color: #b2b2b2;;
+    background-color: #ffffff;
     text-align: center;
     border: none;
     font-style: italic;
 }
 
-
-/*Scelta percorso*/
-main#scelta_percorso {
-    max-width: 393px;
-    max-height: 852;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    align-content: center;
+/*Intro percorsi*/
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
 }
 
+.content {
+    position: fixed;
+    bottom: 0;
+    width: 393px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#text_intro {
+    width: 314px;
+    height: 144px;
+    margin: auto;
+}
+
+#myBtn {
+    width: 190px;
+    height: 52px;
+    background-color: #E0ECB4;
+    margin: auto;
+    margin-top: 250px;
+}
+
+
+/*Scelta percorso*/
 #scelta_percorso-text {
     text-align: center;
     width: 100%;
@@ -362,44 +392,118 @@ main#scelta_percorso {
     margin-bottom: 20px;
 }
 
-table {
-    background-color: #033300;
-    border-collapse: collapse;
+input[type=radio] {
+    display: none;
 }
 
-th {
-    align-items: center;
-    text-align: center;
+label.lab {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #E0ECB4;
+    border-radius: 50%;
+    margin: 4px;
 }
 
-td {
-    text-align: justify;
+label.lab:hover {
+    background-color: #E0ECB4;
+}
+
+label.lab-sel {
+    background-color: #E0ECB4;
+    box-shadow: 0 0 2px #E0ECB4;
+}
+
+section#paginazione {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section#pagine {
+    width: 500vw;
+    height: 100vh;
+    display: flex;
+}
+
+section#pagine > div {
+    flex: 0 0 20%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column row-reverse;
+    transition: all .8s ease-in-out;
 }
+
+
+#page1 {
+    background-image: url('Immagini/background_faggi.png');
+    background-size: 393px 852px;
+    background-repeat: no-repeat;
+}
+
+#page2 {
+    background-image: url('Immagini/background_querce.png');
+    background-size: 393px 852px;
+    background-repeat: no-repeat;
+}
+
+#page3 {
+    background-image: url('Immagini/background_pini.png');
+    background-size: 393px 852px;
+    background-repeat: no-repeat;
+}
+
+#page4 {
+    background-image: url('Immagini/background_castagni.png');
+    background-size: 393px 852px;
+    background-repeat: no-repeat;
+}
+
+#page5 {
+    background-image: url('Immagini/background_flora_lago.png');
+    background-size: 393px 852px;
+    background-repeat: no-repeat;
+}
+
+input#inp1:checked ~ div#page1 {
+    margin-left: 0;
+}
+
+input#inp2:checked ~ div#page1 {
+    margin-left: -20%;
+}
+
+input#inp3:checked ~ div#page1 {
+    margin-left: -40%;
+}
+
+input#inp4:checked ~ div#page1 {
+    margin-left: -60%;
+}
+
+input#inp5:checked ~ div#page1 {
+    margin-left: -80%;
+}
+
+
 
 /*Percorso faggi*/
 main#percorso_faggi {
-    max-width: 393px;
-    max-height: 852;
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    margin-top: 50px;
     align-items: center;
     flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    align-content: center;
 }
 
 #bottoni_percorso {
     max-width: 393px;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
-    justify-content: space-between;
-    align-content: center;
     text-align: center;
 }
 
@@ -627,7 +731,7 @@ main#termini_e_condizioni {
     align-items: flex-end;
 }
 
-nav#main-menu {
+div#main-menu {
     width: 100%;
     height: 109px;
     display: flex;
@@ -638,15 +742,17 @@ nav#main-menu {
 }
 
 
-nav ul {
-    position: absolute;
+div ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     height: 419px;
-    width: 365px;
+    width: 100%;
     background-color: #CECAEA;
-    top: 100%;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 100%
+}
+
+#cameraFileInput {
+    display: none;
 }

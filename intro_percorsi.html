@@ -7,40 +7,36 @@
     <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
     <link href="stile_progetto.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="menu.js"></script> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <title> Matenemus </title>
     <style>
       body {
-        background-image: url('Immagini/background_percorso.png');
-        background-size: 393px 852px;
-        background-repeat: no-repeat;
         overflow: hidden;
-        text-align: center;
       }
     </style>
   </head>
    
-	 <body>    
-    <main id="percorso_faggi">
-    <div>
-        <img id="mappaimg" src="Immagini/mappa.png" height="520px" width="312px">
-    </div>
-   
-    <div id="bottoni_percorso">
-    <button class="button-mappa">
-        <a href="./scelta_percorso.html">
-            <h2><b>INDIETRO</b></h2>
-        </a>
-    </button>
+<body>
+  <main id="splash">
+    <video autoplay muted loop id="myVideo">
+      <source src="Immagini/video_percorsi.mp4" type="video/mp4">
+     </video> 
 
-    <button class="button-mappa">
-        <a href="/">
-            <h2><b>AVVIA</b></h2>
-        </a>
-    </button>
+     <div class="content">
+       <h4 id="text_intro">Entra a contatto con la <b>natura</b>,<br><br>
+        <i>immergiti</i> nella sua <b>energia</b>,<br><br>
+        lasciati inebriare del suo profumo<br><br>
+        e <b>fatti travolgere</b> <i>dalla sua bellezza</i>.</h4>
+
+    <a href="./scelta_percorso.html">
+      <button id="myBtn">
+        <h2><b>VAI AI PERCORSI</b></h2>
+      </button> 
+    </a>
     </div>
-    </main>
+  </main>
 
   <nav id="main-menu">
     <img id="menuimg" src="./Immagini/pulsante_impostazioni.png" width="98px" height="auto" onclick="cambia()">
