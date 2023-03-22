@@ -117,8 +117,6 @@ button {
     padding: 10px 10px 10px 10px;
     width: 128px;
     height: 52px;
-    margin-left: 50px;
-    margin-bottom: 10px;
 }
 
 .button-base {
@@ -195,7 +193,7 @@ button {
     background-color: #FFFFFF;
     justify-content: center;
     align-items: center;
-    margin: 15px 10px 0px 40px;
+    margin: 15px 65px 0px 30px;
     border-radius: 26px;
 }
 
@@ -736,13 +734,14 @@ main#termini_e_condizioni {
 }
 
 div#main-menu {
-    width: 100%;
+    width: 100vw;
     height: 109px;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
     bottom:0;
     position: absolute;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
 }
 
 
