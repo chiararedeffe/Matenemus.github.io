@@ -10,12 +10,13 @@
 */
 
 body {
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: auto;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -222,8 +223,8 @@ img{
 
 /*Pagina Splash*/
 main#splash {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -291,8 +292,8 @@ main#home {
 /*Scatta selfie*/
 main#selfie {
     padding: 20px 1%;
-    max-width: 393px;
-    max-height: 852px;
+    width: 100vw;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -320,8 +321,8 @@ main#selfie {
 
 /*Registrazione utente*/
 main#utente {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -497,8 +498,8 @@ input#inp5:checked ~ div#page1 {
 /*Percorso faggi*/
 main#percorso_faggi {
     padding: 20px 1%;
-    max-width: 393px;
-    max-height: 852px;
+    width: 100vw;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     display: flex;
