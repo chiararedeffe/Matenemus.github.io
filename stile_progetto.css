@@ -249,8 +249,8 @@ main#home {
 }
 
 .container img {
-    width: 393px;
-    height: 852px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container .button-base_grande {
@@ -261,8 +261,8 @@ main#home {
     -ms-transform: translate(-50%, -50%);
     padding: 12px 24px;
     border-radius: 26px;
-    width: 190px;
-    height: 52px;
+    width: 100vw;
+    height: 50vh;
     background-color: #E0ECB4;
     margin: -5px 70px -5px 70px;
 }
@@ -275,8 +275,8 @@ main#home {
     -ms-transform: translate(-50%, -50%);
     padding: 12px 24px;
     border-radius: 26px;
-    width: 190px;
-    height: 52px;
+    width: 100vw;
+    height: 50vh;
     background-color: #CECAEA;
     margin: -5px 70px -5px 70px;
 }
